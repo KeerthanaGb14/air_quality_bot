@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>air_quality_bot</name>
+  <version>0.0.1</version>
+  <description>Urban Air Quality Monitoring Robot</description>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>rviz</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+</package>
