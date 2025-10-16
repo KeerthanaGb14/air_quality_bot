@@ -1,0 +1,52 @@
+# RViz Configuration for Air Quality Monitoring Robot
+# Save as rviz/air_quality_bot.rviz
+
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/Tool Properties
+    Name: Tool Properties
+  - Class: rviz/Views
+    Name: Views
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Name: RobotModel
+      Class: rviz/RobotModel
+      Enabled: true
+      Robot Description: robot_description
+      TF Prefix: ""
+      Alpha: 1.0
+      Show Axes: true
+      Show Visual: true
+      Show Collision: false
+      Update Interval: 0.0
+      Color: [255, 255, 255]
+      Materials:
+        - Name: blue
+          Color: [0, 0, 255]
+        - Name: red
+          Color: [255, 0, 0]
+        - Name: grey
+          Color: [128, 128, 128]
+
+  Global Options:
+    Fixed Frame: base_link
+
+Views:
+  Current:
+    Class: rviz/Orbit
+    Name: Orbit
+    Focal Point: [0, 0, 0]
+    Distance: 1.0
+    Pitch: 0.4
+    Yaw: 0.8
+    Near Clip Distance: 0.01
+    Far Clip Distance: 1000
+    Up Axis: Z
+
+Tools:
+  - Class: rviz/Interact
+  - Class: rviz/MoveCamera
+  - Class: rviz/Select
