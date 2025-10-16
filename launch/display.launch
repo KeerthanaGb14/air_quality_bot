@@ -1,0 +1,8 @@
+<launch>
+  <!-- Load robot description -->
+  <param name="robot_description" command="$(find xacro)/xacro $(find air_quality_bot)/urdf/air_quality_bot.urdf"/>
+
+  <!-- Launch RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find air_quality_bot)/rviz/air_quality_bot.rviz"/>
+</launch>
+
